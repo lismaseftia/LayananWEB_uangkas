@@ -1,18 +1,38 @@
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!system/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+# CodeIgniter specific
+/application/cache/*
+/application/logs/*
+/application/config/database.php
+/application/config/config.php
+/application/config/autoload.php
+/application/config/constants.php
+/application/config/migration.php
+/application/config/routes.php
 
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
-
-#codeigniter 3
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
+# Composer
 /vendor/
+/composer.lock
+
+# Package-specific directories
+/bin/
+/build/
+/docs/
+/tests/
+
+# IDE and Editor files
+/.idea/
+/.vscode/
+
+# System files
+/.htaccess
+/index.php
+/licence.txt
+/robots.txt
+
+# User-specific files
+/.env
+/.env.example
+/.env.local
+
+# Miscellaneous
+.DS_Store
+*.log
